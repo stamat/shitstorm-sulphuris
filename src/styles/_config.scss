@@ -11,6 +11,8 @@ $container-max-width: 1440px;
  * COLORS
  */
 $colors: (
+ foreground: #1a1a1d, // .btn hover / .btn-outline rely on this
+ background: #fff,    // .btn label color
  black: #000,
  white: #fff,
  primary: #824F2D,

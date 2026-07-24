@@ -12,3 +12,12 @@ a {
   color: var(--color-primary);
 }
 
+// GitHub-ish inline code. `> code` inside `pre` is left to highlight.js.
+:not(pre) > code {
+  padding: 0.2em 0.4em;
+  font-size: 85%;
+  white-space: break-spaces;
+  background-color: color-mix(in srgb, var(--color-foreground) 12%, transparent);
+  border-radius: 6px;
+}
+
