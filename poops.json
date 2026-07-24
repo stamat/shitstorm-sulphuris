@@ -12,10 +12,10 @@
   }],
   "styles": [{
     "in": "src/styles/site.scss",
-    "out": "dist/styles/site.css",
+    "out": ".tmp/site.css",
     "options": {
-      "sourcemap": true,
-      "minify": true,
+      "sourcemap": false,
+      "minify": false,
       "justMinified": false
     }
   },
@@ -24,6 +24,20 @@
     "out": "dist/styles/style.css",
     "options": {
       "sourcemap": true,
+      "minify": true,
+      "justMinified": false
+    }
+  }],
+  "postcss": [{
+    "in": ".tmp/site.css",
+    "out": "dist/styles/site.css",
+    "options": {
+      "plugins": [
+        ["@fullhuman/postcss-purgecss", {
+          "content": ["dist/**/*.html", "dist/scripts/*.js"]
+        }],
+        ["postcss-discard-comments", { "removeAll": true }]
+      ],
       "minify": true,
       "justMinified": false
     }

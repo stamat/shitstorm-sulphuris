@@ -1,14 +1,14 @@
 {
   "private": true,
-  "name": "shitstorm",
+  "name": "shitstorm-sulphuris",
   "version": "1.0.0",
-  "description": "Poops project template",
+  "description": "Poops project template - sulphuris + book-of-spells",
   "main": "src/scripts/script.js",
   "style": "src/styles/index.scss",
-  "homepage": "https://stamat.github.io/shitstorm/",
+  "homepage": "https://stamat.github.io/shitstorm-sulphuris/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stamat/shitstorm.git"
+    "url": "https://github.com/stamat/shitstorm-sulphuris.git"
   },
   "keywords": [
     "poops",
@@ -18,7 +18,7 @@
   "contributors": [],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stamat/shitstorm/issues"
+    "url": "https://github.com/stamat/shitstorm-sulphuris/issues"
   },
   "scripts": {
     "dev": "poops",
@@ -28,10 +28,13 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@fullhuman/postcss-purgecss": "^8.0.0",
     "eslint": "^10.7.0",
     "globals": "^17.7.0",
     "jest": "^30.4.2",
     "poops": "^1.5.3",
+    "postcss": "^8.5.23",
+    "postcss-discard-comments": "^7.0.8",
     "stylelint": "^17.14.1",
     "stylelint-config-standard-scss": "^17.0.0"
   },
