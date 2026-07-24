@@ -1,0 +1,14 @@
+@use 'config' as c;
+@forward 'sulphuris/core/_config' with (
+  $colors: c.$colors,
+  $breakpoints: c.$breakpoints,
+  $container-max-width: c.$container-max-width,
+  $heading-font: c.$heading-font,
+  $paragraph-font: c.$paragraph-font
+);
+@use 'sulphuris';
+
+a {
+  color: var(--color-primary);
+}
+

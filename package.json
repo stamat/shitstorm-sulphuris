@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "name": "shitstorm",
+  "version": "1.0.0",
+  "description": "Poops project template",
+  "main": "src/scripts/script.js",
+  "style": "src/styles/index.scss",
+  "homepage": "https://stamat.github.io/shitstorm/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stamat/shitstorm.git"
+  },
+  "keywords": [
+    "poops",
+    "template"
+  ],
+  "author": "Nikola Stamatovic <@stamat>",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stamat/shitstorm/issues"
+  },
+  "scripts": {
+    "dev": "poops",
+    "build": "poops -b",
+    "lint": "eslint . && stylelint \"src/**/*.scss\"",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.7.0",
+    "globals": "^17.7.0",
+    "jest": "^30.4.2",
+    "poops": "^1.5.3",
+    "stylelint": "^17.14.1",
+    "stylelint-config-standard-scss": "^17.0.0"
+  },
+  "dependencies": {
+    "book-of-spells": "^1.1.1",
+    "sulphuris": "^2.0.1"
+  }
+}
