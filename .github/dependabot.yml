@@ -1,0 +1,8 @@
+version: 2
+updates:
+  # Maintain dependencies for npm. No allow filter here — this repo is a
+  # template, so the toolchain in devDependencies is the thing being shipped.
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"

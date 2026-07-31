@@ -1,3 +1,3 @@
 #!/bin/bash
 
-npx poops
+npm run dev
