@@ -35,3 +35,13 @@ jobs:
       # this matrix doubles as a cross-platform check of Poops itself
       - name: Test
         run: npm test
+
+      # Browser-support gates on the emitted bundles: stylelint checks the CSS
+      # against .browserslistrc, es-check confirms the JS parses at the esbuild
+      # target. Both read dist/, which is gitignored, so they can only run after
+      # the build — which the test step above performs.
+      - name: Check browser compatibility
+        shell: bash
+        run: |
+          npm run lint:browsers
+          npm run lint:es

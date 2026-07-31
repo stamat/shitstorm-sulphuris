@@ -46,6 +46,12 @@ belongs in [poops](https://github.com/stamat/poops/issues).
   if you add an output, assert it there too.
 - **Run `script/lint`.** `eslint` and `stylelint` are the authority, and CI runs
   them on Node 22 and 24, on Linux and Windows.
+- **Keep the bundles supportable.** `script/build` then `npm run lint:browsers`
+  and `npm run lint:es` check the compiled CSS and JS against
+  [.browserslistrc](.browserslistrc) and the esbuild target. CI runs both after
+  the build; a feature that degrades to nothing can be added to the ignore list
+  in [stylelint.browsers.config.mjs](stylelint.browsers.config.mjs), with a
+  comment saying why.
 - **Add a changelog entry** under `## [Unreleased]` in
   [CHANGELOG.md](CHANGELOG.md) — that file explains the format.
 
