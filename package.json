@@ -44,6 +44,6 @@
   },
   "dependencies": {
     "book-of-spells": "^1.1.1",
-    "sulphuris": "^2.0.1"
+    "sulphuris": "^4.0.0"
   }
 }
