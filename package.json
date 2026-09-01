@@ -43,7 +43,7 @@
     "stylelint-no-unsupported-browser-features": "^8.1.1"
   },
   "dependencies": {
-    "book-of-spells": "^1.1.1",
-    "sulphuris": "^2.0.1"
+    "book-of-spells": "^2.3.0",
+    "sulphuris": "^4.0.0"
   }
 }
